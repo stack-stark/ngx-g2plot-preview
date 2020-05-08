@@ -1,0 +1,62 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar" nzCollapsible nzWidth="256px" nzBreakpoint="md" [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <a href="/">
+        <!-- <img src="assets/svg/ng-seeds.svg" alt="logo"> -->
+        <h1>ngx-g2plot预览</h1>
+      </a>
+    </div>
+
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <ng-container *ngFor="let item of menuList; trackBy: trackByItems">
+        <ng-container *ngIf="item.children">
+          <li nz-submenu [nzOpen]="item.open" [nzTitle]="item.name" [nzIcon]="item.nzIcon">
+            <ng-container *ngFor="let child of item.children">
+              <ng-container *ngIf="!child['children']">
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="{{ child['routerLink']}}">{{ child['name']}}</a>
+          </li>
+        </ng-container>
+
+        <ng-container *ngIf="child['children']">
+          <li nz-submenu [nzOpen]="child.open" [nzTitle]="child.name" [nzIcon]="child.nzIcon">
+            <ng-container *ngFor="let grandson of child['children']">
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="{{grandson['routerLink']}}">{{grandson['name']}}</a>
+          </li>
+        </ng-container>
+        </li>
+      </ng-container>
+
+      </ng-container>
+      </li>
+      </ng-container>
+
+      <ng-container *ngIf="!item.children">
+        <li nz-menu-item nzMatchRouter>
+          <span><i nz-icon [nzType]="item.nzIcon" nzTheme="outline"></i></span>
+          <a routerLink="{{item['routerLink']}}">{{!isCollapsed ?item['name'] : ''}}</a>
+        </li>
+      </ng-container>
+      </ng-container>
+
+    </ul>
+
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header">
+        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+          <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+        </span>
+      </div>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+    <nz-footer>Angular种子项目,基于ng-zorro,由 stack-stark 构建</nz-footer>
+  </nz-layout>
+</nz-layout>
