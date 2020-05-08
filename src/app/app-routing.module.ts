@@ -13,6 +13,10 @@ const routes: Routes = [
         path: 'bar',
         loadChildren: () => import('./pages/bar/bar.module').then(m => m.BarModule)
       },
+      {
+        path: 'line',
+        loadChildren: () => import('./pages/line/line.module').then(m => m.LineModule)
+      },
     ]
   }
 ];

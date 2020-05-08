@@ -15,7 +15,8 @@ import {
   DatabaseOutline,
   FileOutline,
   ApartmentOutline,
-  SnippetsOutline
+  SnippetsOutline,
+  LineChartOutline
 } from '@ant-design/icons-angular/icons';
 
 const icons = [
@@ -32,7 +33,8 @@ const icons = [
   DatabaseOutline,
   FileOutline,
   ApartmentOutline,
-  SnippetsOutline
+  SnippetsOutline,
+  LineChartOutline
 ];
 
 @NgModule({
