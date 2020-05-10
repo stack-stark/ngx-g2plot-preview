@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LineComponent } from './line.component';
+import { AreaComponent } from './area.component';
+import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { Routes, RouterModule } from '@angular/router';
-
 const routes: Routes = [
-  { path: '', component: LineComponent }
+  { path: '', component: AreaComponent }
 ];
 
+
 @NgModule({
-  declarations: [LineComponent],
+  declarations: [AreaComponent],
   imports: [
     CommonModule,
-    SharedModule,
     RouterModule.forChild(routes),
+    SharedModule
   ]
 })
-export class LineModule { }
+export class AreaModule { }

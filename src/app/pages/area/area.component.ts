@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-line',
-  templateUrl: './line.component.html',
-  styleUrls: ['./line.component.less']
+  selector: 'app-area',
+  templateUrl: './area.component.html',
+  styleUrls: ['./area.component.less']
 })
-export class LineComponent implements OnInit {
+export class AreaComponent implements OnInit {
 
   constructor() { }
 
@@ -18,18 +18,10 @@ export class LineComponent implements OnInit {
     { year: '1996', value: 6 },
     { year: '1997', value: 7 },
     { year: '1998', value: 9 },
-    { year: '1999', value: 13 },
+    { year: '1999', value: 13 }
   ];
 
-  options = {
-    title: {
-      visible: true,
-      text: '折线图',
-    },
-    description: {
-      visible: true,
-      text: '用平滑的曲线代替折线。',
-    },
+  options =  {
     data: this.data,
     xField: 'year',
     yField: 'value',
@@ -37,18 +29,18 @@ export class LineComponent implements OnInit {
 
   codes = {
     codeTs: {
-      title: `line.component.ts`,
+      title: `area.component.ts`,
       code: `import { Component, OnInit } from '@angular/core';
 
       @Component({
-        selector: 'app-line',
-        templateUrl: './line.component.html',
-        styleUrls: ['./line.component.less']
+        selector: 'app-area',
+        templateUrl: './area.component.html',
+        styleUrls: ['./area.component.less']
       })
-      export class LineComponent implements OnInit {
-    
+      export class AreaComponent implements OnInit {
+      
         constructor() { }
-    
+      
         data = [
           { year: '1991', value: 3 },
           { year: '1992', value: 4 },
@@ -58,31 +50,24 @@ export class LineComponent implements OnInit {
           { year: '1996', value: 6 },
           { year: '1997', value: 7 },
           { year: '1998', value: 9 },
-          { year: '1999', value: 13 },
+          { year: '1999', value: 13 }
         ];
-    
-        options = {
-          title: {
-            visible: true,
-            text: '折线图',
-          },
-          description: {
-            visible: true,
-            text: '用平滑的曲线代替折线。',
-          },
+      
+        options =  {
           data: this.data,
           xField: 'year',
           yField: 'value',
         };
-      }`,
+      }
+      `
     },
     codeHtml: {
-      title: `line.component.html`,
-      code: `<div starkG2plotLine [options]="options" style="width: 500px;"></div>`,
-    },
-  }
+      title: `area.component.html`,
+      code: `<div starkG2plotArea [options]="options"></div>`
+    }
+  };
 
   ngOnInit(): void {
   }
-  
+
 }

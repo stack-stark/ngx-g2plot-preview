@@ -113,10 +113,13 @@
         <span>安装</span>
       </div>
   
-      <div class="card card-small" (click)="selection.value = 'use'" tabindex="0">
+      <!-- <div class="card card-small" (click)="selection.value = 'use'" tabindex="0">
+        <span>使用</span>
+      </div> -->
+      <div class="card card-small" (click)="toPreview()" tabindex="0">
         <span>使用</span>
       </div>
-  
+
       <div class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
         <span>参数</span>
       </div>
@@ -142,11 +145,11 @@
       </div>
   
       <pre *ngSwitchCase="'pwa'">
-  -options: object 图表参数
-  具体参数见官方文档 https://g2plot.antv.vision/zh/docs/manual/plots/line
-  
-  所有指令
-  
+        -options: object 图表参数
+        具体参数见官方文档 
+        
+        https://g2plot.antv.vision/zh/docs/manual/plots/line
+        
         </pre>
       <pre *ngSwitchCase="'dependency'">
         angular的g2plot封装,方便使用,当前最新版本: 0.0.2
@@ -155,13 +158,13 @@
       </pre>
     </div>
   
-    <h2 style="margin-top: 15px;">preview</h2>
+    <!-- <h2 style="margin-top: 15px;">preview</h2>
   
     <div class="card-container">
       <div class="card card-small" (click)="toPreview()">
         <span>预览所有图表</span>
       </div>
-    </div>
+    </div> -->
   
   </div>
   

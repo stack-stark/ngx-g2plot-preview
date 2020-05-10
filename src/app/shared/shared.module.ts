@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxG2plotModule } from 'ngx-g2plot';
-import { NzGridModule } from 'ng-zorro-antd';
+import { NzGridModule, NzTabsModule } from 'ng-zorro-antd';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
+import { CodeShowComponent } from './components/code-show/code-show.component';
 export function getHighlightLanguages() {
   return {
     typescript: () => import('highlight.js/lib/languages/typescript'),
@@ -12,12 +13,13 @@ export function getHighlightLanguages() {
 }
 
 @NgModule({
-  declarations: [],
+  declarations: [CodeShowComponent],
   imports: [
     CommonModule,
     NgxG2plotModule,
     NzGridModule,
-    HighlightModule
+    HighlightModule,
+    NzTabsModule
   ],
   providers: [
     {
@@ -27,6 +29,11 @@ export function getHighlightLanguages() {
       }
     }
   ],
-  exports: [NgxG2plotModule, NzGridModule, HighlightModule]
+  exports: [
+    NgxG2plotModule,
+    NzGridModule,
+    HighlightModule,
+    CodeShowComponent
+  ]
 })
 export class SharedModule { }

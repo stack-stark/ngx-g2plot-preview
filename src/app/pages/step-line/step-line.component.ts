@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-line',
-  templateUrl: './line.component.html',
-  styleUrls: ['./line.component.less']
+  selector: 'app-step-line',
+  templateUrl: './step-line.component.html',
+  styleUrls: ['./step-line.component.less']
 })
-export class LineComponent implements OnInit {
+export class StepLineComponent implements OnInit {
 
   constructor() { }
 
@@ -22,14 +22,6 @@ export class LineComponent implements OnInit {
   ];
 
   options = {
-    title: {
-      visible: true,
-      text: '折线图',
-    },
-    description: {
-      visible: true,
-      text: '用平滑的曲线代替折线。',
-    },
     data: this.data,
     xField: 'year',
     yField: 'value',
@@ -37,18 +29,18 @@ export class LineComponent implements OnInit {
 
   codes = {
     codeTs: {
-      title: `line.component.ts`,
+      title: `step-line.component.ts`,
       code: `import { Component, OnInit } from '@angular/core';
 
       @Component({
-        selector: 'app-line',
-        templateUrl: './line.component.html',
-        styleUrls: ['./line.component.less']
+        selector: 'app-step-line',
+        templateUrl: './step-line.component.html',
+        styleUrls: ['./step-line.component.less']
       })
-      export class LineComponent implements OnInit {
-    
+      export class StepLineComponent implements OnInit {
+      
         constructor() { }
-    
+      
         data = [
           { year: '1991', value: 3 },
           { year: '1992', value: 4 },
@@ -60,29 +52,22 @@ export class LineComponent implements OnInit {
           { year: '1998', value: 9 },
           { year: '1999', value: 13 },
         ];
-    
         options = {
-          title: {
-            visible: true,
-            text: '折线图',
-          },
-          description: {
-            visible: true,
-            text: '用平滑的曲线代替折线。',
-          },
           data: this.data,
           xField: 'year',
           yField: 'value',
         };
-      }`,
+      }
+      `,
     },
     codeHtml: {
-      title: `line.component.html`,
-      code: `<div starkG2plotLine [options]="options" style="width: 500px;"></div>`,
+      title: `step-line.component.html`,
+      code: `<div starkG2plotStepLine [options]="options" style="width: 500px;"></div>`,
     },
   }
 
+
   ngOnInit(): void {
   }
-  
+
 }

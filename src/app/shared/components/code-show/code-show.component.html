@@ -1,0 +1,9 @@
+<nz-tabset>
+    <ng-container *ngFor="let key of objectKeys(codes)">
+        <nz-tab [nzTitle]="codes[key]['title']">
+            <pre>
+                <code [highlight]="codes[key]['code']"></code>
+              </pre>
+        </nz-tab>
+    </ng-container>
+</nz-tabset>

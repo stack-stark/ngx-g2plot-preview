@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LineComponent } from './line.component';
+import { GroupedColumnComponent } from './grouped-column.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: LineComponent }
+  { path: '', component: GroupedColumnComponent }
 ];
 
+
+
 @NgModule({
-  declarations: [LineComponent],
+  declarations: [GroupedColumnComponent],
   imports: [
     CommonModule,
     SharedModule,
     RouterModule.forChild(routes),
   ]
 })
-export class LineModule { }
+export class GroupedColumnModule { }
