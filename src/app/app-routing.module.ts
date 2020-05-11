@@ -45,6 +45,46 @@ const routes: Routes = [
         path: 'RangeColumn',
         loadChildren: () => import('./pages/range-column/range-column.module').then(m => m.RangeColumnModule)
       },
+      {
+        path: 'Histogram',
+        loadChildren: () => import('./pages/histogram/histogram.module').then(m => m.HistogramModule)
+      },
+      {
+        path: 'Waterfall',
+        loadChildren: () => import('./pages/waterfall/waterfall.module').then(m => m.WaterfallModule)
+      },
+      {
+        path: 'StackedBar',
+        loadChildren: () => import('./pages/stacked-bar/stacked-bar.module').then(m => m.StackedBarModule)
+      },
+      {
+        path: 'GroupedBar',
+        loadChildren: () => import('./pages/grouped-bar/grouped-bar.module').then(m => m.GroupedBarModule)
+      },
+      {
+        path: 'RangeBar',
+        loadChildren: () => import('./pages/range-bar/range-bar.module').then(m => m.RangeBarModule)
+      },
+      {
+        path: 'Pie',
+        loadChildren: () => import('./pages/pie/pie.module').then(m => m.PieModule)
+      },
+      {
+        path: 'Donut',
+        loadChildren: () => import('./pages/donut/donut.module').then(m => m.DonutModule)
+      },
+      {
+        path: 'Rose',
+        loadChildren: () => import('./pages/rose/rose.module').then(m => m.RoseModule)
+      },
+      {
+        path: 'StackedRose',
+        loadChildren: () => import('./pages/stacked-rose/stacked-rose.module').then(m => m.StackedRoseModule)
+      },
+      {
+        path: 'GroupedRose',
+        loadChildren: () => import('./pages/grouped-rose/grouped-rose.module').then(m => m.GroupedRoseModule)
+      },
     ]
   }
 ];
