@@ -115,4 +115,28 @@ export const menuList: Array<Menu> = [
         children: null,
         nzIcon: 'line-chart',
     },
+    {
+        name: 'Radar - 雷达图',
+        routerLink: '/preview/Radar',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'Scatter - 散点图',
+        routerLink: '/preview/Scatter',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'Bubble - 气泡图',
+        routerLink: '/preview/Bubble',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'Heatmap - 热力图',
+        routerLink: '/preview/Heatmap',
+        children: null,
+        nzIcon: 'line-chart',
+    },
 ];
