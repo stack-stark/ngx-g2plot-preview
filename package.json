@@ -22,7 +22,7 @@
     "@antv/g2plot": "^1.1.1",
     "highlight.js": "^9.18.1",
     "ng-zorro-antd": "^9.1.0",
-    "ngx-g2plot": "0.0.5",
+    "ngx-g2plot": "0.0.7",
     "ngx-highlightjs": "^4.0.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
