@@ -2,6 +2,12 @@ import { Menu } from './menu.interface';
 
 export const menuList: Array<Menu> = [
     {
+        name: 'About - 关于',
+        routerLink: '/preview/About',
+        children: null,
+        nzIcon: 'bulb',
+    },
+    {
         name: 'Bar - 基础条形图',
         routerLink: '/preview/Bar',
         children: null,

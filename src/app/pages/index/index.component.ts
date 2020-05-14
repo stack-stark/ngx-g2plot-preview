@@ -16,6 +16,6 @@ export class IndexComponent implements OnInit {
   }
 
   toPreview() {
-    this.router.navigateByUrl('/preview/Bar');
+    this.router.navigateByUrl('/preview/About');
   }
 }

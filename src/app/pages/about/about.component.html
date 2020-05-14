@@ -1,0 +1,53 @@
+<article nz-typography>
+  <nz-divider></nz-divider>
+  <h3 nz-typography>介绍</h3>
+  <p nz-typography>
+    ngx-g2plot是一个基于@antv/g2plot封装的angular指令库。恰到好处的封装使得使用起来很方便,让开发者专注业务开发。
+  </p>
+  <p nz-typography>
+    Ngx-g2plot is an angular instruction library encapsulated based on @antv/g2plot. Proper encapsulation makes it easy
+    to use and allows developers to focus on business development.
+  </p>
+  <h4 nz-typography>关于本人</h4>
+  <p nz-typography>
+    90后，网瘾少年，暴雪系玩家，绝边地描大师,热爱生活却不爱运动，游泳除外。还喜欢烹饪与美食。
+  </p>
+  <p nz-typography>
+    I am crazy about games and programming. I love life but not sports, except swimming. I also like cooking and food.
+  </p>
+  <h4 nz-typography>联系我</h4>
+  <p nz-typography>
+    <span>mail: </span><strong>tostack@163.com</strong>
+  </p>
+  <p nz-typography>
+    <span>github: </span><strong>https://github.com/stack-stark</strong>
+  </p>
+  <p nz-typography>
+    <span>wechat: </span><strong>https://u.wechat.com/EG0ePeZc7N7TfbHfnfiD6hY</strong>
+  </p>
+  <nz-divider></nz-divider>
+  <h3 nz-typography>
+    所有指令列表 All Directive
+  </h3>
+  <nz-table #basicTable [nzData]="directiveList">
+    <thead>
+      <tr>
+        <th>指令</th>
+        <th>图表</th>
+        <th>exportAs</th>
+        <th>document</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{data.directive}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.export}}</td>
+        <td>
+          <a href="{{data.document}}" target="_blank" >document</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+
+</article>

@@ -10,6 +10,10 @@ const routes: Routes = [
     component: DesktopComponent,
     children: [
       {
+        path: 'About',
+        loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)
+      },
+      {
         path: 'Bar',
         loadChildren: () => import('./pages/bar/bar.module').then(m => m.BarModule)
       },
