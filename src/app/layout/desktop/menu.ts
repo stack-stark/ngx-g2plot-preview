@@ -1,32 +1,26 @@
 import { Menu } from './menu.interface';
 
 export const menuList: Array<Menu> = [
-    // {
-    //     name: 'About - 关于',
-    //     routerLink: '/preview/About',
-    //     children: null,
-    //     nzIcon: 'bulb',
-    // },
     {
         name: 'Line - 折线图',
         routerLink: null,
         open: true,
         children: [
             {
-                name: 'Line - 基础折线图',
-                routerLink: '/preview/line/line-basic',
+                name: 'basic - 基础折线图',
+                routerLink: '/preview/line/lineBasic',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Line - 多折线图',
-                routerLink: '/preview/Line',
+                name: 'multiple - 多折线图',
+                routerLink: '/preview/line/lineMultiple',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Line - 阶梯折线图',
-                routerLink: '/preview/Line',
+                name: 'step - 阶梯折线图',
+                routerLink: '/preview/line/lineStep',
                 children: null,
                 nzIcon: 'line-chart',
             },
@@ -35,24 +29,24 @@ export const menuList: Array<Menu> = [
     },
     {
         name: 'Area - 面积图',
-        routerLink: '/preview/Area',
+        routerLink: null,
         open: true,
         children: [
             {
-                name: 'Area - 基础面积图',
-                routerLink: '/preview/Area',
+                name: 'basic - 基础面积图',
+                routerLink: '/preview/areaBasic',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Area - 堆积面积图',
-                routerLink: '/preview/Area',
+                name: 'stacked - 堆积面积图',
+                routerLink: '/preview/area/areaStacked',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Area - 百分百面积图',
-                routerLink: '/preview/Area',
+                name: 'percent - 百分百面积图',
+                routerLink: '/preview/area/areaPercent',
                 children: null,
                 nzIcon: 'line-chart',
             },
@@ -60,111 +54,100 @@ export const menuList: Array<Menu> = [
         nzIcon: 'line-chart',
     },
     {
-        name: 'Bar - 柱形图',
-        routerLink: '/preview/Bar',
+        name: 'column - 柱形图',
+        routerLink: null,
         open: true,
         children: [
             {
-                name: 'Bar - 基础柱状图',
-                routerLink: '/preview/Bar',
+                name: 'basic - 基础柱状图',
+                routerLink: '/preview/column/columnBasic',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Bar - 堆叠柱状图',
-                routerLink: '/preview/Bar',
+                name: 'stacked - 堆叠柱状图',
+                routerLink: '/preview/column/columnStacked',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Bar - 分组柱状图',
-                routerLink: '/preview/Bar',
+                name: 'grouped - 分组柱状图',
+                routerLink: '/preview/column/columnGrouped',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Bar - 百分百柱状图',
-                routerLink: '/preview/Bar',
+                name: 'percent - 百分百柱状图',
+                routerLink: '/preview/column/columnPercent',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Bar - 区间柱状图',
-                routerLink: '/preview/Bar',
+                name: 'range - 区间柱状图',
+                routerLink: '/preview/column/columnRange',
                 children: null,
                 nzIcon: 'line-chart',
             },
         ],
         nzIcon: 'line-chart',
     },
-
     {
-        name: 'Pie - 饼图',
+        name: 'pie - 饼图',
         routerLink: '/preview/Pie',
         open: true,
         children: [
             {
-                name: 'Pie - 饼图',
-                routerLink: '/preview/Pie',
+                name: 'pie - 饼图',
+                routerLink: '/preview/pie/pieBasic',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'Pie - 环图',
-                routerLink: '/preview/Pie',
+                name: 'donut - 环图',
+                routerLink: '/preview/donut/donutBasic',
                 children: null,
                 nzIcon: 'line-chart',
             },
         ],
         nzIcon: 'line-chart',
     },
-
-
     {
         name: 'Bar - 仪表盘',
-        routerLink: '/preview/Bar',
-        children: [
-            {
-                name: 'Bar - 仪表盘',
-                routerLink: '/preview/Bar',
-                children: null,
-                nzIcon: 'line-chart',
-            }
-        ],
+        routerLink: '/preview/gauge/gaugeBasic',
+        children: null,
         nzIcon: 'line-chart',
     },
-
     {
-        name: 'Bar - 条形图',
-        routerLink: '/preview/Bar',
+        name: 'bar - 条形图',
+        routerLink: null,
         children: [
             {
                 name: 'StackedBar - 基础条形图',
-                routerLink: '/preview/StackedBar',
+                routerLink: '/preview/bar/barBasic',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
                 name: 'StackedBar - 堆叠条形图',
-                routerLink: '/preview/StackedBar',
+                routerLink: '/preview/bar/barStackedBar',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'GroupedBar - 分组条形图',
-                routerLink: '/preview/GroupedBar',
+                name: 'groupedBar - 分组条形图',
+                routerLink: '/preview/bar/barGroupedBar',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'RangeBar - 百分百条形图',
-                routerLink: '/preview/RangeBar',
+                name: 'percent - 百分百条形图',
+                routerLink: '/preview/bar/barPercent',
                 children: null,
                 nzIcon: 'line-chart',
             },
             {
-                name: 'RangeBar - 区间条形图',
-                routerLink: '/preview/RangeBar',
+                name: 'rangeBar - 区间条形图',
+                routerLink: '/preview/bar/barRangeBar',
                 children: null,
                 nzIcon: 'line-chart',
             },
@@ -172,44 +155,24 @@ export const menuList: Array<Menu> = [
         nzIcon: 'line-chart',
     },
 
-
     {
-        name: 'StepLine - 阶梯折图',
-        routerLink: '/preview/StepLine',
+        name: 'waterfall - 瀑布图',
+        routerLink: '/preview/waterfall/waterfallBasic',
         children: null,
         nzIcon: 'line-chart',
     },
     {
-        name: 'StackedArea - 堆叠面积图',
-        routerLink: '/preview/StackedArea',
+        name: 'scatter - 散点图',
+        routerLink: '/preview/scatter/scatterBasic',
         children: null,
         nzIcon: 'line-chart',
     },
-
     {
-        name: 'Waterfall - 瀑布图',
-        routerLink: '/preview/Waterfall',
-        children: [
-            {
-                name: 'Waterfall - 瀑布图',
-                routerLink: '/preview/Waterfall',
-                children: null,
-                nzIcon: 'line-chart',
-            },
-        ],
-        nzIcon: 'line-chart',
-    },
-    {
-        name: 'Scatter - 散点图',
-        routerLink: '/preview/Scatter',
-        children: null,
-        nzIcon: 'line-chart',
-    },
-
-    {
-        name: 'Histogram - 双轴图',
+        name: 'dualLine - 双轴图',
         routerLink: '/preview/Histogram',
-        children: null,
+        children: [
+            
+        ],
         nzIcon: 'line-chart',
     },
 
