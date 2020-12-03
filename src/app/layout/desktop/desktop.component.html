@@ -1,14 +1,19 @@
+<!--
+ * @Description: 
+ * @Date: 2020-05-08 12:41:28
+ * @LastEditors: tanmh
+ * @LastEditTime: 2020-12-03 17:01:51
+-->
 <nz-layout class="app-layout">
   <nz-sider class="menu-sidebar" nzCollapsible nzWidth="256px" nzBreakpoint="md" [(nzCollapsed)]="isCollapsed"
-    [nzTrigger]="null">
+    [nzTrigger]="null" nzTheme="light">
     <div class="sidebar-logo">
       <a href="/">
-        <!-- <img src="assets/svg/ng-seeds.svg" alt="logo"> -->
-        <h1>ngx-g2plot预览</h1>
+        <h1 style="color: #404040;">ngx-g2plot预览</h1>
       </a>
     </div>
 
-    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+    <ul nz-menu nzTheme="light" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
       <ng-container *ngFor="let item of menuList; trackBy: trackByItems">
         <ng-container *ngIf="item.children">
           <li nz-submenu [nzOpen]="item.open" [nzTitle]="item.name" [nzIcon]="item.nzIcon">
@@ -20,7 +25,7 @@
         </ng-container>
 
         <ng-container *ngIf="child['children']">
-          <li nz-submenu [nzOpen]="child.open" [nzTitle]="child.name" [nzIcon]="child.nzIcon">
+          <li nz-submenu [nzOpen]="child['open']" [nzTitle]="child['name']" [nzIcon]="child['nzIcon']">
             <ng-container *ngFor="let grandson of child['children']">
           <li nz-menu-item nzMatchRouter>
             <a routerLink="{{grandson['routerLink']}}">{{grandson['name']}}</a>

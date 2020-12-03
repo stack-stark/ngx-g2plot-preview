@@ -1,7 +1,14 @@
+/*
+ * @Description:
+ * @Date: 2020-05-12 17:33:54
+ * @LastEditors: tanmh
+ * @LastEditTime: 2020-12-03 15:13:18
+ */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgxG2plotModule } from 'ngx-g2plot';
-import { NzGridModule, NzTabsModule } from 'ng-zorro-antd';
+import { G2plotAreaModule } from 'ngx-g2plot';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import { CodeShowComponent } from './components/code-show/code-show.component';
 export function getHighlightLanguages() {
@@ -16,7 +23,7 @@ export function getHighlightLanguages() {
   declarations: [CodeShowComponent],
   imports: [
     CommonModule,
-    NgxG2plotModule,
+    G2plotAreaModule,
     NzGridModule,
     HighlightModule,
     NzTabsModule
@@ -30,7 +37,6 @@ export function getHighlightLanguages() {
     }
   ],
   exports: [
-    NgxG2plotModule,
     NzGridModule,
     HighlightModule,
     CodeShowComponent

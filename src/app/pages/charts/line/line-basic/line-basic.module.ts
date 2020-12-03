@@ -1,29 +1,24 @@
-/*
- * @Description:
- * @Date: 2020-05-12 17:33:54
- * @LastEditors: tanmh
- * @LastEditTime: 2020-12-03 15:16:19
- */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LineComponent } from './line.component';
+import { LineBasicComponent } from './line-basic.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { Routes, RouterModule } from '@angular/router';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { G2plotLineModule } from 'ngx-g2plot';
-
+import { LineComponent } from 'src/app/pages/line/line.component';
 const routes: Routes = [
   { path: '', component: LineComponent }
 ];
 
+
 @NgModule({
-  declarations: [LineComponent],
+  declarations: [LineBasicComponent],
   imports: [
     CommonModule,
-    SharedModule,
     RouterModule.forChild(routes),
     NzButtonModule,
-    G2plotLineModule
+    G2plotLineModule,
+    SharedModule
   ]
 })
-export class LineModule { }
+export class LineBasicModule { }
