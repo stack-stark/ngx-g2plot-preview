@@ -14,8 +14,8 @@ const routes: Routes = [
         loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)
       },
       {
-        path: 'line/line-basic',
-        loadChildren: () => import('./pages/line/line.module').then(m => m.LineModule)
+        path: 'line/lineBasic',
+        loadChildren: () => import('./pages/charts/line/line-basic/line-basic.module').then(m => m.LineBasicModule)
       },
 
       // {

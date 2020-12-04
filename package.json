@@ -1,6 +1,6 @@
 {
   "name": "ngx-g2plot-preview",
-  "version": "0.0.7",
+  "version": "2.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 3888 --open",
