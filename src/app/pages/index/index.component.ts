@@ -1,3 +1,9 @@
+/*
+ * @Description:
+ * @Date: 2020-05-15 10:36:12
+ * @LastEditors: tanmh
+ * @LastEditTime: 2020-12-04 11:12:04
+ */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -16,6 +22,6 @@ export class IndexComponent implements OnInit {
   }
 
   toPreview() {
-    this.router.navigateByUrl('/preview/About');
+    this.router.navigateByUrl('/preview/line/lineBasic');
   }
 }

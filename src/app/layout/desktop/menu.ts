@@ -93,7 +93,7 @@ export const menuList: Array<Menu> = [
     },
     {
         name: 'pie - 饼图',
-        routerLink: '/preview/Pie',
+        routerLink: null,
         open: true,
         children: [
             {
@@ -112,7 +112,7 @@ export const menuList: Array<Menu> = [
         nzIcon: 'line-chart',
     },
     {
-        name: 'Bar - 仪表盘',
+        name: 'gauge - 仪表盘',
         routerLink: '/preview/gauge/gaugeBasic',
         children: null,
         nzIcon: 'line-chart',
@@ -122,7 +122,7 @@ export const menuList: Array<Menu> = [
         routerLink: null,
         children: [
             {
-                name: 'StackedBar - 基础条形图',
+                name: 'basic - 基础条形图',
                 routerLink: '/preview/bar/barBasic',
                 children: null,
                 nzIcon: 'line-chart',
