@@ -17,7 +17,10 @@ const routes: Routes = [
         path: 'line/lineBasic',
         loadChildren: () => import('./pages/charts/line/line-basic/line-basic.module').then(m => m.LineBasicModule)
       },
-
+      {
+        path: 'line/lineMultiple',
+        loadChildren: () => import('./pages/charts/line/line-multiple/line-multiple.module').then(m => m.LineMultipleModule)
+      },
       // {
       //   path: 'Bar',
       //   loadChildren: () => import('./pages/bar/bar.module').then(m => m.BarModule)

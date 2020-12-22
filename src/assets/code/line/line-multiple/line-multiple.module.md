@@ -1,3 +1,4 @@
+``` js
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LineMultipleComponent } from './line-multiple.component';
@@ -22,3 +23,5 @@ const routes: Routes = [
   ]
 })
 export class LineMultipleModule { }
+
+```

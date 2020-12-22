@@ -1,1 +1,15 @@
 <p>line-multiple works!</p>
+
+<nz-tabset>
+  <nz-tab nzTitle="html">
+    <markdown [src]="'assets/code/line/line-multiple/line-multiple.html.md'" (load)="onLoad($event)" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="ts">
+    <markdown [src]="'assets/code/line/line-multiple/line-multiple.ts.md'" (load)="onLoad($event)" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="module">
+    <markdown [src]="'assets/code/line/line-multiple/line-multiple.module.md'" (load)="onLoad($event)" (error)="onError($event)"></markdown>
+  </nz-tab>
+</nz-tabset>

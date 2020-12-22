@@ -12,4 +12,11 @@ export class LineMultipleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onLoad(e) {
+    console.log(e);
+  }
+
+  onError(e) {
+    console.log(e);
+  }
 }
