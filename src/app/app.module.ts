@@ -21,6 +21,7 @@ import zh from '@angular/common/locales/zh';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { DesktopComponent } from './layout/desktop/desktop.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 registerLocaleData(zh);
 
@@ -39,7 +40,8 @@ registerLocaleData(zh);
     BrowserAnimationsModule,
     NzLayoutModule,
     NzMenuModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ScullyLibModule
   ],
   bootstrap: [AppComponent],
   providers: [
