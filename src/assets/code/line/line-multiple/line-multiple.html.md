@@ -1,3 +1,4 @@
 ``` html
-<p>line-multiple works!</p>
+<h2>多阶梯折线图</h2>
+<div starkG2plotLine #divG2plotLine="g2plotLine" [options]="options" style="width: 800px;"></div>
 ```

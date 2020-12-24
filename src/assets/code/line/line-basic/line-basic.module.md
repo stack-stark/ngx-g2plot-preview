@@ -1,3 +1,4 @@
+``` js
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LineBasicComponent } from './line-basic.component';
@@ -28,3 +29,6 @@ const routes: Routes = [
   ]
 })
 export class LineBasicModule { }
+
+
+```

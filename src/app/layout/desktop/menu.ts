@@ -30,7 +30,7 @@ export const menuList: Array<Menu> = [
     {
         name: 'area - 面积图',
         routerLink: null,
-        open: true,
+        open: false,
         children: [
             {
                 name: 'basic - 基础面积图',
@@ -56,7 +56,7 @@ export const menuList: Array<Menu> = [
     {
         name: 'column - 柱形图',
         routerLink: null,
-        open: true,
+        open: false,
         children: [
             {
                 name: 'basic - 基础柱状图',
@@ -94,7 +94,7 @@ export const menuList: Array<Menu> = [
     {
         name: 'pie - 饼图',
         routerLink: null,
-        open: true,
+        open: false,
         children: [
             {
                 name: 'pie - 饼图',

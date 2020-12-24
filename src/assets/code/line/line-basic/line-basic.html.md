@@ -1,3 +1,4 @@
+``` html
 <div nz-row>
   <div nz-col nzSpan="10">
     <h2>基础</h2>
@@ -16,20 +17,4 @@
     </div>
   </div>
 </div>
-
-
-<h2>code</h2>
-
-<nz-tabset>
-  <nz-tab nzTitle="html">
-    <markdown [src]="'assets/code/line/line-basic/line-basic.html.md'" (error)="onError($event)"></markdown>
-  </nz-tab>
-
-  <nz-tab nzTitle="ts">
-    <markdown [src]="'assets/code/line/line-basic/line-basic.ts.md'" (error)="onError($event)"></markdown>
-  </nz-tab>
-
-  <nz-tab nzTitle="module">
-    <markdown [src]="'assets/code/line/line-basic/line-basic.module.md'" (error)="onError($event)"></markdown>
-  </nz-tab>
-</nz-tabset>
+```

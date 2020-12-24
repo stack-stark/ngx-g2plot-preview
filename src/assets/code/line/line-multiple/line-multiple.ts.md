@@ -1,79 +1,50 @@
 ``` typescript
-import { Component, ViewChild } from '@angular/core';
-import { G2plotLineDirective } from 'ngx-g2plot';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-selector: 'app-line-basic',
-templateUrl: './line-basic.component.html',
-styleUrls: ['./line-basic.component.less']
+  selector: 'app-line-multiple',
+  templateUrl: './line-multiple.component.html',
+  styleUrls: ['./line-multiple.component.less']
 })
-export class LineBasicComponent {
+export class LineMultipleComponent {
 
-constructor() { }
-@ViewChild('divG2plotLine') divG2plotLine: G2plotLineDirective;
+  constructor() { }
 
-data = [
-    { year: '1991', value: 3 },
-    { year: '1992', value: 4 },
-    { year: '1993', value: 3.5 },
-    { year: '1994', value: 5 },
-    { year: '1995', value: 4.9 },
-    { year: '1996', value: 6 },
-    { year: '1997', value: 7 },
-    { year: '1998', value: 9 },
-    { year: '1999', value: 13 },
-];
+  data = [
+    { month: 'Jan', key: 'series1', value: 125 },
+    { month: 'Jan', key: 'series2', value: 51 },
+    { month: 'Feb', key: 'series1', value: 132 },
+    { month: 'Feb', key: 'series2', value: 91 },
+    { month: 'Mar', key: 'series1', value: 141 },
+    { month: 'Mar', key: 'series2', value: 34 },
+    { month: 'Apr', key: 'series1', value: 158 },
+    { month: 'Apr', key: 'series2', value: 47 },
+    { month: 'May', key: 'series1', value: 133 },
+    { month: 'May', key: 'series2', value: 63 },
+    { month: 'June', key: 'series1', value: 143 },
+    { month: 'June', key: 'series2', value: 58 },
+    { month: 'July', key: 'series1', value: 176 },
+    { month: 'July', key: 'series2', value: 56 },
+    { month: 'Aug', key: 'series1', value: 194 },
+    { month: 'Aug', key: 'series2', value: 77 },
+    { month: 'Sep', key: 'series1', value: 115 },
+    { month: 'Sep', key: 'series2', value: 99 },
+    { month: 'Oct', key: 'series1', value: 134 },
+    { month: 'Oct', key: 'series2', value: 106 },
+    { month: 'Nov', key: 'series1', value: 110 },
+    { month: 'Nov', key: 'series2', value: 88 },
+    { month: 'Dec', key: 'series1', value: 91 },
+    { month: 'Dec', key: 'series2', value: 56 },
+  ];
 
-options = {
-    title: {
-    visible: true,
-    text: '折线图',
-    },
-    description: {
-    visible: true,
-    text: '用平滑的曲线代替折线。',
-    },
+  options = {
     data: this.data,
-    xField: 'year',
+    xField: 'month',
     yField: 'value',
-};
-
-updateConfig(): void {
-    const options = {
-    title: {
-        visible: true,
-        text: 'The line chart',
-    },
-    description: {
-        visible: true,
-        text: 'Replace broken lines with smooth curves.',
-    },
-    xField: 'year',
-    yField: 'value',
-    };
-    this.divG2plotLine.instance.update(options); // 使用当前实例方法 Use the current instance method
-    this.divG2plotLine.instance.render(); // 使用当前实例方法 Use the current instance method
-}
-
-changeData(): void {
-    const data = [
-    { year: '1991', value: 13 },
-    { year: '1992', value: 14 },
-    { year: '1993', value: 13.5 },
-    { year: '1994', value: 15 },
-    { year: '1995', value: 14.9 },
-    { year: '1996', value: 16 },
-    { year: '1997', value: 17 },
-    { year: '1998', value: 19 },
-    { year: '1999', value: 23 },
-    ];
-    this.divG2plotLine.changeData(data);
-}
-
-
-destroy(): void {
-    this.divG2plotLine.destroy();
-}
+    legend: false,
+    seriesField: 'key',
+    stepType: 'hvh',
+  }
 
 }
 
