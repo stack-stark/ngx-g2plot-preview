@@ -1,3 +1,16 @@
-<h2>preview</h2>
-<div starkG2plotArea [options]="options" style="width: 500px;"></div>
-<h2>code</h2>
+<h2>基础面积图</h2>
+<div starkG2plotArea [options]="options" style="width: 800px;"></div>
+
+<nz-tabset>
+  <nz-tab nzTitle="html">
+    <markdown [src]="'assets/code/line/line-multiple/line-multiple.html.md'"  (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="ts">
+    <markdown [src]="'assets/code/line/line-multiple/line-multiple.ts.md'"  (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="module">
+    <markdown [src]="'assets/code/line/line-multiple/line-multiple.module.md'"  (error)="onError($event)"></markdown>
+  </nz-tab>
+</nz-tabset>

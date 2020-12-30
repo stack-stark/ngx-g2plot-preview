@@ -9,64 +9,63 @@ export class AreaBasicComponent implements OnInit {
   constructor() { }
 
   data = [
-    { year: '1991', value: 3 },
-    { year: '1992', value: 4 },
-    { year: '1993', value: 3.5 },
-    { year: '1994', value: 5 },
-    { year: '1995', value: 4.9 },
-    { year: '1996', value: 6 },
-    { year: '1997', value: 7 },
-    { year: '1998', value: 9 },
-    { year: '1999', value: 13 }
+    {
+      Date: '2010-01',
+      scales: 1998
+    },
+    {
+      Date: '2010-02',
+      scales: 1850
+    },
+    {
+      Date: '2010-03',
+      scales: 1720
+    },
+    {
+      Date: '2010-04',
+      scales: 1818
+    },
+    {
+      Date: '2010-05',
+      scales: 1920
+    },
+    {
+      Date: '2010-06',
+      scales: 1802
+    },
+    {
+      Date: '2010-07',
+      scales: 1945
+    },
+    {
+      Date: '2012-05',
+      scales: 1689
+    },
+    {
+      Date: '2012-06',
+      scales: 1755
+    },
+    {
+      Date: '2012-07',
+      scales: 1495
+    },
   ];
 
-  options =  {
+  options = {
     data: this.data,
-    xField: 'year',
-    yField: 'value',
-  };
-
-  codes = {
-    codeTs: {
-      title: `area.component.ts`,
-      code: `import { Component, OnInit } from '@angular/core';
-
-      @Component({
-        selector: 'app-area',
-        templateUrl: './area.component.html',
-        styleUrls: ['./area.component.less']
-      })
-      export class AreaComponent implements OnInit {
-      
-        constructor() { }
-      
-        data = [
-          { year: '1991', value: 3 },
-          { year: '1992', value: 4 },
-          { year: '1993', value: 3.5 },
-          { year: '1994', value: 5 },
-          { year: '1995', value: 4.9 },
-          { year: '1996', value: 6 },
-          { year: '1997', value: 7 },
-          { year: '1998', value: 9 },
-          { year: '1999', value: 13 }
-        ];
-      
-        options =  {
-          data: this.data,
-          xField: 'year',
-          yField: 'value',
-        };
-      }
-      `
+    xField: 'Date',
+    yField: 'scales',
+    xAxis: {
+      range: [0, 1],
+      tickCount: 5,
     },
-    codeHtml: {
-      title: `area.component.html`,
-      code: `<div starkG2plotArea [options]="options"></div>`
-    }
   };
+
 
   ngOnInit(): void {
   }
 
+  onError(e) {
+    console.log(e);
+  }
 }

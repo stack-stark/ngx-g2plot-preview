@@ -1,1 +1,16 @@
-<p>阶梯折线</p>
+<h2>阶梯折线图</h2>
+<div starkG2plotLine #divG2plotLine="g2plotLine" [options]="options" style="width: 800px;"></div>
+
+<nz-tabset>
+  <nz-tab nzTitle="html">
+    <markdown [src]="'assets/code/line/line-step/line-step.html.md'"  (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="ts">
+    <markdown [src]="'assets/code/line/line-step/line-step.ts.md'"  (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="module">
+    <markdown [src]="'assets/code/line/line-step/line-step.module.md'"  (error)="onError($event)"></markdown>
+  </nz-tab>
+</nz-tabset>
