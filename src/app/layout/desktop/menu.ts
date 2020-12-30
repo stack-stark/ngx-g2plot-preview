@@ -34,7 +34,7 @@ export const menuList: Array<Menu> = [
         children: [
             {
                 name: 'basic - 基础面积图',
-                routerLink: '/preview/areaBasic',
+                routerLink: '/preview/area/areaBasic',
                 children: null,
                 nzIcon: 'line-chart',
             },
