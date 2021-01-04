@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { G2plotAreaModule } from 'ngx-g2plot';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 const routes: Routes = [
   { path: '', component: AreaPercentComponent }
@@ -17,7 +18,8 @@ const routes: Routes = [
     MarkdownModule.forRoot(),
     RouterModule.forChild(routes),
     G2plotAreaModule,
-    NzTabsModule
+    NzTabsModule,
+    NzSpinModule
   ]
 })
 export class AreaPercentModule { }
