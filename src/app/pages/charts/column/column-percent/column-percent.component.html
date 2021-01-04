@@ -1,1 +1,21 @@
-<p>column-percent works!</p>
+<div nz-row>
+  <div nz-col nzSpan="10" nzOffset="2">
+    <h2>百分百柱状图</h2>
+    <div starkG2plotColumn [options]="options" style="width: 800px;"></div>
+  </div>
+</div>
+
+<h2>code</h2>
+<nz-tabset>
+  <nz-tab nzTitle="html">
+    <markdown [src]="'assets/code/column/column-percent/column-percent.html.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="ts">
+    <markdown [src]="'assets/code/column/column-percent/column-percent.ts.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="module">
+    <markdown [src]="'assets/code/column/column-percent/column-percent.module.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+</nz-tabset>

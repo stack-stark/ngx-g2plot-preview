@@ -1,1 +1,21 @@
-<p>column-stacked works!</p>
+<div nz-row>
+  <div nz-col nzSpan="10" nzOffset="2">
+    <h2>堆叠分组柱状图</h2>
+    <div starkG2plotColumn [options]="options" style="width: 800px;"></div>
+  </div>
+</div>
+
+<h2>code</h2>
+<nz-tabset>
+  <nz-tab nzTitle="html">
+    <markdown [src]="'assets/code/column/column-stacked/column-stacked.html.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="ts">
+    <markdown [src]="'assets/code/column/column-stacked/column-stacked.ts.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="module">
+    <markdown [src]="'assets/code/column/column-stacked/column-stacked.module.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+</nz-tabset>
