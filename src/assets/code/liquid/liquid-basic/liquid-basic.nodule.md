@@ -1,26 +1,26 @@
-```js 
+``` js
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WaterfallBasicComponent } from './waterfall-basic.component';
-import { G2plotWaterfallModule } from 'ngx-g2plot';
-import { MarkdownModule } from 'ngx-markdown';
+import { LiquidBasicComponent } from './liquid-basic.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MarkdownModule } from 'ngx-markdown';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { G2plotLiquidModule } from 'ngx-g2plot';
 
 const routes: Routes = [
-  { path: '', component: WaterfallBasicComponent }
+  { path: '', component: LiquidBasicComponent }
 ];
 
 @NgModule({
-  declarations: [WaterfallBasicComponent],
+  declarations: [LiquidBasicComponent],
   imports: [
     CommonModule,
     MarkdownModule.forRoot(),
     RouterModule.forChild(routes),
-    G2plotWaterfallModule,
+    G2plotLiquidModule,
     NzTabsModule
   ]
 })
-export class WaterfallBasicModule { }
+export class LiquidBasicModule { }
 
 ```

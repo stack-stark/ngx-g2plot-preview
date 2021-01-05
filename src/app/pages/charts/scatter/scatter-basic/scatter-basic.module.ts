@@ -1,3 +1,4 @@
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ScatterBasicComponent } from './scatter-basic.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
     MarkdownModule.forRoot(),
     RouterModule.forChild(routes),
     G2plotScatterModule,
-    NzTabsModule
+    NzTabsModule,
+    NzSpinModule
   ]
 })
 export class ScatterBasicModule { }

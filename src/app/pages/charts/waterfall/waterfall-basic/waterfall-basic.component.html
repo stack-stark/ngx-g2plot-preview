@@ -1,1 +1,21 @@
-<p>waterfall-basic works!</p>
+<div nz-row>
+  <div nz-col nzSpan="10" nzOffset="2">
+    <h2>瀑布图</h2>
+    <div starkG2plotWaterfall [options]="options" style="width: 800px;"></div>
+  </div>
+</div>
+
+<h2>code</h2>
+<nz-tabset>
+  <nz-tab nzTitle="html">
+    <markdown [src]="'assets/code/waterfall/waterfall-basic/waterfall-basic.html.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="ts">
+    <markdown [src]="'assets/code/waterfall/waterfall-basic/waterfall-basic.ts.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="module">
+    <markdown [src]="'assets/code/waterfall/waterfall-basic/waterfall-basic.module.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+</nz-tabset>

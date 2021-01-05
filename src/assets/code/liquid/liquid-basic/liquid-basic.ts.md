@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit } from '@angular/core';
+``` js
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-liquid-basic',
@@ -20,7 +21,6 @@ export class LiquidBasicComponent {
     },
   };
 
-  onError(e: EventEmitter<string>) {
-    console.error(e);
-  }
 }
+
+```
