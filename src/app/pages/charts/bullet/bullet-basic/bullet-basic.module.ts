@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GaugeBasicComponent } from './gauge-basic.component';
-import { G2plotGaugeModule } from 'ngx-g2plot';
-import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { BulletBasicComponent } from './bullet-basic.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { G2plotBulletModule } from 'ngx-g2plot';
 
 const routes: Routes = [
-  { path: '', component: GaugeBasicComponent }
+  { path: '', component: BulletBasicComponent }
 ];
+
 @NgModule({
-  declarations: [GaugeBasicComponent],
+  declarations: [BulletBasicComponent],
   imports: [
     CommonModule,
     MarkdownModule.forRoot(),
     RouterModule.forChild(routes),
-    G2plotGaugeModule,
+    G2plotBulletModule,
     NzTabsModule
   ]
 })
-export class GaugeBasicModule { }
+export class BulletBasicModule { }

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, EventEmitter, OnInit, ViewChild } from '@angular/core';
 import { G2plotAreaDirective } from 'ngx-g2plot';
 
 @Component({
@@ -49,7 +49,7 @@ export class AreaPercentComponent implements OnInit {
       });
   }
 
-  onError(e) {
-    console.log(e);
+  onError(e: EventEmitter<string>) {
+    console.error(e);
   }
 }

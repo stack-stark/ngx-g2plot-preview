@@ -118,6 +118,18 @@ export const menuList: Array<Menu> = [
         nzIcon: 'line-chart',
     },
     {
+        name: 'liquid - 水波图',
+        routerLink: '/preview/liquid/liquidBasic',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'bullet - 子弹图',
+        routerLink: '/preview/bullet/bulletBasic',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
         name: 'bar - 条形图',
         routerLink: null,
         children: [

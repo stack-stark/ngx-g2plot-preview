@@ -69,7 +69,14 @@ const routes: Routes = [
         path: 'gauge/gaugeBasic',
         loadChildren: () => import('./pages/charts/gauge/gauge-basic/gauge-basic.module').then(m => m.GaugeBasicModule)
       },
-
+      {
+        path: 'liquid/liquidBasic',
+        loadChildren: () => import('./pages/charts/liquid/liquid-basic/liquid-basic.module').then(m => m.LiquidBasicModule)
+      },
+      {
+        path: 'bullet/bulletBasic',
+        loadChildren: () => import('./pages/charts/bullet/bullet-basic/bullet-basic.module').then(m => m.BulletBasicModule)
+      },
       {
         path: 'bar/barBasic',
         loadChildren: () => import('./pages/charts/bar/bar-basic/bar-basic.module').then(m => m.BarBasicModule)

@@ -33,8 +33,8 @@ export class LineStepComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onError(e) {
-    console.log(e);
+  onError(e: EventEmitter<string>) {
+    console.error(e);
   }
 
 }

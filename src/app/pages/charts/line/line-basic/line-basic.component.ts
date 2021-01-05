@@ -1,4 +1,4 @@
-import { OnInit } from '@angular/core';
+import { EventEmitter, OnInit } from '@angular/core';
 import { Component, ViewChild } from '@angular/core';
 import { G2plotLineDirective } from 'ngx-g2plot';
 
@@ -130,8 +130,8 @@ export class LineBasicComponent implements OnInit {
     this.divG2plotLine.destroy();
   }
 
-  onError(e) {
-    console.log(e);
+  onError(e: EventEmitter<string>) {
+    console.error(e);
   }
 
 }

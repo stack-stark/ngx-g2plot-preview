@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-column-range',
@@ -31,8 +31,8 @@ export class ColumnRangeComponent {
     },
   };
 
-  onError(e) {
-    console.log(e);
+  onError(e: EventEmitter<string>) {
+    console.error(e);
   }
   
 }

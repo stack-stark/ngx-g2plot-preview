@@ -1,1 +1,21 @@
-<p>gauge-basic works!</p>
+<div nz-row>
+  <div nz-col nzSpan="10" nzOffset="2">
+    <h2>仪表盘</h2>
+    <div starkG2plotGauge #divG2plotGauge="g2plotGauge" [options]="options" style="width: 800px;"></div>
+  </div>
+</div>
+
+<h2>code</h2>
+<nz-tabset>
+  <nz-tab nzTitle="html">
+    <markdown [src]="'assets/code/gauge/gauge-basic/gauge-basic.html.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="ts">
+    <markdown [src]="'assets/code/gauge/gauge-basic/gauge-basic.ts.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="module">
+    <markdown [src]="'assets/code/gauge/gauge-basic/gauge-basic.module.md'" (error)="onError($event)"></markdown>
+  </nz-tab>
+</nz-tabset>

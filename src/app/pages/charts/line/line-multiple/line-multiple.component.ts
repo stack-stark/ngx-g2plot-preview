@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-line-multiple',
@@ -48,8 +48,8 @@ export class LineMultipleComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onError(e) {
-    console.log(e);
+  onError(e: EventEmitter<string>) {
+    console.error(e);
   }
 
 
