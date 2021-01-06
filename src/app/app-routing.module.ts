@@ -105,6 +105,10 @@ const routes: Routes = [
         path: 'scatter/scatterBasic',
         loadChildren: () => import('./pages/charts/scatter/scatter-basic/scatter-basic.module').then(m => m.ScatterBasicModule)
       },
+      {
+        path: 'sankey/sankeyBasic',
+        loadChildren: () => import('./pages/charts/sankey/sankey-basic/sankey-basic.module').then(m => m.SankeyBasicModule)
+      },
     ]
   }
 ];

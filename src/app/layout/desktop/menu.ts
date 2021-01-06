@@ -178,66 +178,10 @@ export const menuList: Array<Menu> = [
         children: null,
         nzIcon: 'line-chart',
     },
-
-    // {
-    //     name: 'dualLine - 双轴图',
-    //     routerLink: '/preview/Histogram',
-    //     children: [
-
-    //     ],
-    //     nzIcon: 'line-chart',
-    // },
-
-    // {
-    //     name: 'Radar - 雷达图',
-    //     routerLink: '/preview/Radar',
-    //     children: null,
-    //     nzIcon: 'line-chart',
-    // },
-
-    // {
-    //     name: 'Histogram - 直方图',
-    //     routerLink: '/preview/Histogram',
-    //     children: null,
-    //     nzIcon: 'line-chart',
-    // },
-
-    // {
-    //     name: 'Donut - 环图',
-    //     routerLink: '/preview/Donut',
-    //     children: null,
-    //     nzIcon: 'line-chart',
-    // },
-    // {
-    //     name: 'Rose - 玫瑰图',
-    //     routerLink: '/preview/Rose',
-    //     children: null,
-    //     nzIcon: 'line-chart',
-    // },
-    // {
-    //     name: 'StackedRose - 堆叠玫瑰图',
-    //     routerLink: '/preview/StackedRose',
-    //     children: null,
-    //     nzIcon: 'line-chart',
-    // },
-    // {
-    //     name: 'GroupedRose - 分组玫瑰图',
-    //     routerLink: '/preview/GroupedRose',
-    //     children: null,
-    //     nzIcon: 'line-chart',
-    // },
-
-
-    // {
-    //     name: 'Bubble - 气泡图',
-    //     routerLink: '/preview/Bubble',
-    //     children: null,
-    //     nzIcon: 'line-chart',
-    // },
-    // {
-    //     name: 'Heatmap - 热力图',
-    //     routerLink: '/preview/Heatmap',
-    //     children: null,
-    //     nzIcon: 'line-chart',
-    // },
+    {
+        name: 'sankey - 桑基图',
+        routerLink: '/preview/sankey/sankeyBasic',
+        children: null,
+        nzIcon: 'line-chart',
+    },
 ];
