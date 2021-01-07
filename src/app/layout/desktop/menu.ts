@@ -215,4 +215,28 @@ export const menuList: Array<Menu> = [
         children: null,
         nzIcon: 'line-chart',
     },
+    {
+        name: 'chord - 弦图',
+        routerLink: '/preview/chord/chord',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'sunburst - 旭日图',
+        routerLink: '/preview/sunburst/sunburst',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'box - 箱图',
+        routerLink: '/preview/box/box',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'radial-bar - 玉珏图',
+        routerLink: '/preview/radial-bar/radial-bar', 
+        children: null,
+        nzIcon: 'line-chart',
+    },
 ];

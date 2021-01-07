@@ -9,14 +9,14 @@
     [nzTrigger]="null" nzTheme="light">
     <div class="sidebar-logo">
       <a href="/">
-        <h1 style="color: #404040;">ngx-g2plot预览</h1>
+        <h1 style="color: #404040;">图标示例</h1>
       </a>
     </div>
 
     <ul nz-menu nzTheme="light" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
       <ng-container *ngFor="let item of menuList; trackBy: trackByItems">
         <ng-container *ngIf="item.children">
-          <li nz-submenu [nzOpen]="item.open" [nzTitle]="item.name" [nzIcon]="item.nzIcon">
+          <li nz-submenu [nzOpen]="item.open" [nzTitle]="item.name">
             <ng-container *ngFor="let child of item.children">
               <ng-container *ngIf="!child['children']">
           <li nz-menu-item nzMatchRouter>
@@ -40,7 +40,7 @@
 
       <ng-container *ngIf="!item.children">
         <li nz-menu-item nzMatchRouter>
-          <span><i nz-icon [nzType]="item.nzIcon" nzTheme="outline"></i></span>
+          <!-- <span><i nz-icon [nzType]="item.nzIcon" nzTheme="outline"></i></span> -->
           <a routerLink="{{item['routerLink']}}">{{!isCollapsed ?item['name'] : ''}}</a>
         </li>
       </ng-container>
@@ -52,9 +52,9 @@
   <nz-layout>
     <nz-header>
       <div class="app-header">
-        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+        <!-- <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
           <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
-        </span>
+        </span> -->
       </div>
     </nz-header>
     <nz-content>

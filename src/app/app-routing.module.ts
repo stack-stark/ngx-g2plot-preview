@@ -129,6 +129,22 @@ const routes: Routes = [
         path: 'radar/radar',
         loadChildren: () => import('./pages/charts/radar/radar.module').then(m => m.RadarModule)
       },
+      {
+        path: 'chord/chord',
+        loadChildren: () => import('./pages/charts/chord/chord.module').then(m => m.ChordModule)
+      },
+      {
+        path: 'sunburst/sunburst',
+        loadChildren: () => import('./pages/charts/sunburst/sunburst.module').then(m => m.SunburstModule)
+      },
+      {
+        path: 'box/box',
+        loadChildren: () => import('./pages/charts/box/box.module').then(m => m.BoxModule)
+      },
+      {
+        path: 'radial-bar/radial-bar',
+        loadChildren: () => import('./pages/charts/radial-bar/radial-bar.module').then(m => m.RadialBarModule)
+      },
     ]
   }
 ];

@@ -28,13 +28,18 @@ const dirss = [
   // './treemap/treemap-basic',
   // './sankey/sankey-basic',
   // './chord/chord-basic',
+  // './stock/stock',
+  // './funnel/funnel',
+  // './word-cloud/word-cloud',
 
-  './radar/radar',
-  './stock/stock',
-  './funnel/funnel',
-  './word-cloud/word-cloud',
+  // './sunburst',
+  // './radial-bar',
+  // './box',
 
-  
+  './sunburst/sunburst',
+  './radial-bar/radial-bar',
+  './box/box',
+
 ];
 
 function createF(name) {
