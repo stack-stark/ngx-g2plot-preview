@@ -1,5 +1,4 @@
-``` js 
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-treemap',
@@ -42,6 +41,9 @@ export class TreemapComponent {
     colorField: 'name',
   };
 
-}
 
-```
+  onError(e: EventEmitter<string>) {
+    console.error(e);
+  }
+
+}

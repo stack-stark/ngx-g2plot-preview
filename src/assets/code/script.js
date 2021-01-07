@@ -25,10 +25,16 @@ const dirss = [
   // './gauge/gauge-basic',
   // './waterfall/waterfall-basic',
   // './scatter/scatter-basic',
-  './treemap/treemap-basic',
-  './sankey/sankey-basic',
-  './chord/chord-basic',
+  // './treemap/treemap-basic',
+  // './sankey/sankey-basic',
+  // './chord/chord-basic',
 
+  './radar/radar',
+  './stock/stock',
+  './funnel/funnel',
+  './word-cloud/word-cloud',
+
+  
 ];
 
 function createF(name) {

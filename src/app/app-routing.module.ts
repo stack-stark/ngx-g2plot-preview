@@ -109,6 +109,26 @@ const routes: Routes = [
         path: 'sankey/sankeyBasic',
         loadChildren: () => import('./pages/charts/sankey/sankey-basic/sankey-basic.module').then(m => m.SankeyBasicModule)
       },
+      {
+        path: 'treemap/treemap',
+        loadChildren: () => import('./pages/charts/treemap/treemap.module').then(m => m.TreemapModule)
+      },
+      {
+        path: 'funnel/funnel',
+        loadChildren: () => import('./pages/charts/funnel/funnel.module').then(m => m.FunnelModule)
+      },
+      {
+        path: 'word-cloud/word-cloud',
+        loadChildren: () => import('./pages/charts/word-cloud/word-cloud.module').then(m => m.WordCloudModule)
+      },
+      {
+        path: 'stock/stock',
+        loadChildren: () => import('./pages/charts/stock/stock.module').then(m => m.StockModule)
+      },
+      {
+        path: 'radar/radar',
+        loadChildren: () => import('./pages/charts/radar/radar.module').then(m => m.RadarModule)
+      },
     ]
   }
 ];

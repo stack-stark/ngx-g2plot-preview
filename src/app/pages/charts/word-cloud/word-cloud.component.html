@@ -1,0 +1,22 @@
+<div nz-row>
+  <h2>词云图-每次渲染保持位置不变</h2>
+  <div starkG2plotWordCloud #divG2plotWordCloud="g2plotWordCloud" [options]="options" style="width: 800px;"
+    [ngStyle]="{'display': data.length?'block':'none'}"></div>
+  <div style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;" *ngIf="!data.length">
+    <nz-spin nzSimple [nzSize]="'large'"></nz-spin>
+  </div>
+</div>
+<h2>code</h2>
+<nz-tabset>
+  <nz-tab nzTitle="html">
+    <markdown [src]="'assets/code/word-cloud/word-cloud.html.md'" ></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="ts">
+    <markdown [src]="'assets/code/word-cloud/word-cloud.ts.md'" ></markdown>
+  </nz-tab>
+
+  <nz-tab nzTitle="module">
+    <markdown [src]="'assets/code/word-cloud/word-cloud.module.md'" ></markdown>
+  </nz-tab>
+</nz-tabset>  

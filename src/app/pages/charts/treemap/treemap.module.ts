@@ -1,4 +1,3 @@
-``` js 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TreemapComponent } from './treemap.component';
@@ -22,5 +21,3 @@ const routes: Routes = [
   ]
 })
 export class TreemapModule { }
-
-```

@@ -4,7 +4,7 @@ export const menuList: Array<Menu> = [
     {
         name: 'Line - 折线图',
         routerLink: null,
-        open: true,
+        open: false,
         children: [
             {
                 name: 'basic - 基础折线图',
@@ -112,24 +112,6 @@ export const menuList: Array<Menu> = [
         nzIcon: 'line-chart',
     },
     {
-        name: 'gauge - 仪表盘',
-        routerLink: '/preview/gauge/gaugeBasic',
-        children: null,
-        nzIcon: 'line-chart',
-    },
-    {
-        name: 'liquid - 水波图',
-        routerLink: '/preview/liquid/liquidBasic',
-        children: null,
-        nzIcon: 'line-chart',
-    },
-    {
-        name: 'bullet - 子弹图',
-        routerLink: '/preview/bullet/bulletBasic',
-        children: null,
-        nzIcon: 'line-chart',
-    },
-    {
         name: 'bar - 条形图',
         routerLink: null,
         children: [
@@ -167,6 +149,25 @@ export const menuList: Array<Menu> = [
         nzIcon: 'line-chart',
     },
     {
+        name: 'gauge - 仪表盘',
+        routerLink: '/preview/gauge/gaugeBasic',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'liquid - 水波图',
+        routerLink: '/preview/liquid/liquidBasic',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'bullet - 子弹图',
+        routerLink: '/preview/bullet/bulletBasic',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+
+    {
         name: 'waterfall - 瀑布图',
         routerLink: '/preview/waterfall/waterfallBasic',
         children: null,
@@ -181,6 +182,36 @@ export const menuList: Array<Menu> = [
     {
         name: 'sankey - 桑基图',
         routerLink: '/preview/sankey/sankeyBasic',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'treemap - 矩形树图',
+        routerLink: '/preview/treemap/treemap',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'funnel - 漏斗图',
+        routerLink: '/preview/funnel/funnel',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'word-cloud - 词云',
+        routerLink: '/preview/word-cloud/word-cloud',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'stock - 股票图',
+        routerLink: '/preview/stock/stock',
+        children: null,
+        nzIcon: 'line-chart',
+    },
+    {
+        name: 'radar - 雷达图',
+        routerLink: '/preview/radar/radar',
         children: null,
         nzIcon: 'line-chart',
     },
