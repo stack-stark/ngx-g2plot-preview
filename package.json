@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "bundle-report": "webpack-bundle-analyzer dist/ngx-g2plot-preview/stats.json",
+    "docker-build": "ng build --prod && docker build -t ngxg2plotpreview .",
     "scully": "scully",
     "scully:build": "ng build --prod --stats-json && scully --scanRoutes",
     "scully:serve": "scully serve"
